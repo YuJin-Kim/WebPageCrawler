@@ -6,7 +6,7 @@ import java.io.*;
 public class UrlReader {
 
 	public void readAndMakeFile(String url, String path) throws Exception {
-		path = path + "result.html";
+		path = path + "/result.html";
 		URL oracle = new URL(url);
 		FileWriter file = new FileWriter(path, true);
 
