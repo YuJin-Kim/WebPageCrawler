@@ -5,7 +5,8 @@ import java.io.*;
 
 public class UrlReader {
 
-	public void readUrl(String url, String path) throws Exception {
+	public void readAndMakeFile(String url, String path) throws Exception {
+		path = path + "result.html";
 		URL oracle = new URL(url);
 		FileWriter file = new FileWriter(path, true);
 
@@ -18,8 +19,8 @@ public class UrlReader {
 
 		while ((inputLine = in.readLine()) != null)
 			bufferedWriter.write(inputLine);
+		
 		bufferedWriter.close();
-
 		in.close();
 
 	}

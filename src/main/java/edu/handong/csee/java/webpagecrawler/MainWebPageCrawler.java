@@ -16,7 +16,7 @@ public class MainWebPageCrawler {
 		url = cli.url;
 		
 		try {
-			reader.readUrl(url, path);
+			reader.readAndMakeFile(url, path);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
